@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太郎のポートフォリオサイト</title>
+    <meta name="description" content="HTMLとCSSを学ぶ太郎のポートフォリオサイト。学習の成果や作品を紹介します。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="ヘッダー">
+        <nav class="ナビゲーション">
+            <h1 class="ロゴ">太郎's Portfolio</h1>
+            <ul class="ナビゲーション一覧">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#words">言葉</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="メイン">
+        <section id="home" class="ヒーローセクション">
+            <div class="ヒーロー内部">
+                <p class="ヒーロータグ">WELCOME</p>
+                <h1 class="ヒーロー見出し">太郎のページ</h1>
+                <p class="ヒーローリード文">素朴だけれど、まっすぐに。日々の学びと好きな言葉を集めた小さなホームページです。</p>
+                <a class="ヒーローリンク" href="#about">自己紹介を見る</a>
+            </div>
+        </section>
+
+        <section id="about" class="セクション セクション--別背景">
+            <div class="セクション見出し">
+                <h2>自己紹介</h2>
+                <p>中学2年生の太郎が、好きなことや今の気持ちをシンプルにまとめました。</p>
+            </div>
+            <div class="プロフィール">
+                <div class="プロフィール画像">
+                    <img src="/Users/muraokadaichi/Desktop/あきらぱぱさんHTTP/1a6bf09a-8610-489b-968f-3c705574daa3.gif" alt="太郎くんの写真">
+                </div>
+                <div class="プロフィール本文">
+                    <p>はじめまして。僕は太郎です。学校では理科と国語が好きで、放課後はサッカー部で汗をかいています。家ではゲームと読書でゆったり過ごすのが定番です。</p>
+                    <p>2024年4月からHTMLとCSSの勉強を始めました。難しいところもあるけれど、自分の手でページが形になる瞬間がたまらなく楽しいです。次はJavaScriptに挑戦して、より使いやすいサイトを作れるようになりたいと思っています。</p>
+                    <ul class="プロフィール一覧">
+                        <li>好きなこと：サッカー・ゲーム・読書</li>
+                        <li>最近の目標：コツコツ継続して作品を増やすこと</li>
+                        <li>大切にしている言葉：「続ければきっとつながる」</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="words" class="セクション">
+            <div class="セクション見出し">
+                <h2>言葉ノート</h2>
+                <p>落ち込んだときや迷ったときに読み返している、好きな言葉を少しだけ紹介します。</p>
+            </div>
+            <div class="言葉一覧">
+                <article class="言葉項目">
+                    <h3>「小さな一歩」</h3>
+                    <p>どんなに遠いゴールでも、今日の一歩から始まる。ページを一枚書くたびに、少しだけ昨日の自分を越えられる気がします。</p>
+                </article>
+                <article class="言葉項目">
+                    <h3>「わからないは伸びしろ」</h3>
+                    <p>壁にぶつかったら、それは伸びる合図だと信じています。ノートに分からないことを書き溜めて、一つずつ調べるのが最近の日課です。</p>
+                </article>
+                <article class="言葉項目">
+                    <h3>「一緒に作る楽しさ」</h3>
+                    <p>誰かとアイデアを出し合って形にする時間が大好きです。いつか同じ気持ちを持つ仲間と、サイトを作ってみたいと思っています。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="セクション セクション--別背景">
+            <div class="セクション見出し">
+                <h2>お問い合わせ</h2>
+                <p>メッセージや感想がありましたら、下のフォームから気軽に送ってください。</p>
+            </div>
+            <form class="連絡フォーム 連絡フォーム--シンプル" method="POST" action="https://secure-server.com/contact">
+                <div class="フォーム行">
+                    <div class="フォームグループ">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" placeholder="山田太郎" required>
+                    </div>
+                    <div class="フォームグループ">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" placeholder="taro@example.com" required>
+                    </div>
+                </div>
+                <div class="フォームグループ">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="5" placeholder="ご感想やご質問など、お気軽にどうぞ。" required></textarea>
+                </div>
+                <button type="submit" class="送信ボタン">送信する</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="フッター">
+        <p>&copy; 2024 太郎's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans", sans-serif;
+    color: #2d2d2d;
+    background: #f6f6f6;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ヘッダー {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.ナビゲーション {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ロゴ {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.ナビゲーション一覧 {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.ナビゲーション一覧 a {
+    color: #444;
+}
+
+.ナビゲーション一覧 a:hover {
+    color: #111;
+}
+
+.メイン {
+    margin-top: 64px;
+}
+
+.セクション {
+    padding: 4rem 1.5rem;
+}
+
+.セクション--別背景 {
+    background: #ffffff;
+}
+
+.セクション見出し {
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.セクション見出し h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.セクション見出し p {
+    margin-top: 0.75rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.ヒーローセクション {
+    background: #e8f0f5;
+    border-bottom: 1px solid #dde4ea;
+}
+
+.ヒーロー内部 {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+    text-align: center;
+}
+
+.ヒーロータグ {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: #40627c;
+    background: #ffffff;
+    border-radius: 999px;
+}
+
+.ヒーロー見出し {
+    margin: 1rem 0 0.75rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #1d3241;
+}
+
+.ヒーローリード文 {
+    margin: 0 auto 1.75rem;
+    max-width: 540px;
+    color: #486173;
+}
+
+.ヒーローリンク {
+    display: inline-block;
+    padding: 0.7rem 1.75rem;
+    border: 1px solid #40627c;
+    border-radius: 999px;
+    color: #40627c;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ヒーローリンク:hover {
+    background: #40627c;
+    color: #ffffff;
+}
+
+.プロフィール {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    .プロフィール {
+        grid-template-columns: 220px 1fr;
+    }
+}
+
+.プロフィール画像 {
+    justify-self: center;
+}
+
+.プロフィール画像 img {
+    border-radius: 8px;
+}
+
+.プロフィール本文 {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.プロフィール一覧 {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #4a4a4a;
+}
+
+.言葉一覧 {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .言葉一覧 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.言葉項目 {
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    padding: 1.75rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.言葉項目 h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1f3b50;
+}
+
+.言葉項目 p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.連絡フォーム {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.連絡フォーム--シンプル {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.フォーム行 {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .フォーム行 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.フォームグループ {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.フォームグループ label {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.フォームグループ input,
+.フォームグループ textarea {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    font: inherit;
+    border: 1px solid #cfd6dc;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.フォームグループ input:focus,
+.フォームグループ textarea:focus {
+    outline: none;
+    border-color: #698da8;
+    box-shadow: 0 0 0 3px rgba(105, 141, 168, 0.15);
+}
+
+.フォームグループ textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+.送信ボタン {
+    justify-self: end;
+    padding: 0.8rem 2.2rem;
+    border: none;
+    border-radius: 999px;
+    background: #40627c;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.送信ボタン:hover {
+    background: #2f4c61;
+}
+
+.フッター {
+    background: #1f2c35;
+    color: #dce3ea;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+    .ナビゲーション一覧 {
+        gap: 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .ヒーロー見出し {
+        font-size: 2.1rem;
+    }
+
+    .セクション {
+        padding: 3.5rem 1.25rem;
+    }
+
+    .連絡フォーム--シンプル {
+        padding: 2rem 1.5rem;
+    }
+
+    .送信ボタン {
+        justify-self: stretch;
+    }
+}
